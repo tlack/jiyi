@@ -1,14 +1,17 @@
-jiyi - long term memory for telegram group chats
-================================================
+# jiyi - long term memory for telegram group chats
 
-# whyy
+## statu
+
+fantasyrepo
+
+## whyy
 
 I like telegram. I want to use it to organize my information between devices.
 My information comes in all forms you know. 
 
 Telegram lacks one layer of structural features added on top. Here's mine.
 
-# how
+## how
 
 You run the bot on your laptop. No server required but you can use one if
 you're into that sorta thing. It's written in a language called Q. 
@@ -25,22 +28,22 @@ rejiggering your conversations.
 It doesn't do any creepy shit. You own all data, and this code - it's public
 domain.
 
-# should
+## should
 
 understand editing messages
 give index of all used tags `ji t(ags..)`
 quick summary of other instances of word/name/tag `ji w(here) word,name,tag...`
 have some basic concept of files and not just TOTALLY FUCKING IGNORE THEM
 
-# does
+## does
 
 nothing! (..yet)
 
-# doesnt (..yet)
+## doesnt (..yet)
 
 understand deleting messages
 
-# maybe
+## maybe
 
 cross indexes
 date ranges
@@ -48,13 +51,13 @@ boolean search terms
 web interface
 csv export
 
-# wont
+## wont
 
 utf8 in depth (should support utf8 in messages transparently)
 emoji
 mysql, python, node, php, js, ...
 
-# now
+## now
 
 1. Install Q/Kdb 32bit from KxSystems (free). 300kb download, no spyware, no
 accounts. Make sure Q works. When you run Q from the command line, or a shell
@@ -89,17 +92,20 @@ and #4-5
 
 7b. Still can't figure it out? You're fucked.
 
-8. Invite your bot to a room and it should pop in and say hello. Want help? Start a message with the "ji " and the bot will tell ya the rest.
+8. Invite your bot to a room and it should pop in and say hello. Want help?
+Start a message with the "ji " and the bot will tell ya the rest.
 
 9. Sick of the bot? Kill your copy of Q that's running jiyi, or say in the room
 "ji fu". "fu" is forced-upgrade mode, which makes it quit and not restart
 automatically. (Did you think it meant something else?)
 
-# license
+## license
 
-public domain, or whatever you want. just make something up. please god worry about something else just for riiiight now
+public domain, or whatever you want. just make something up. please god worry
+about something else just for riiiight now. got something to sign? wont do it.
+got it! fake my signature.
 
-# who
+## who
 
 @tlack305 on telegram
 
