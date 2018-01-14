@@ -6,7 +6,7 @@ fantasyrepo
 
 ## whyy
 
-This software has two primary feats.
+This software has three primary feats:
 
 1. I like telegram. I want to use it to organize my information between devices.
 My information comes in all forms you know. This bot should help me find info 
@@ -17,6 +17,12 @@ you better believe I want to know about it.. on Telegram! This bot can forward
 messages from one room, or one person-to-bot (p2b?) convo, into another one.
 You can then reply to that person or room through the bot. Helps you smooth out
 some UI rough spots and not be caught with your pants on.
+
+3. The bot should not sell my information to a person who has set out to harm
+me or in any way endanger my very super secret sticker sharing activites. It
+should not require me to buy a $299 per year discounted plan. I do not wish to
+receive a daily marketing BuzzMail with social commentary about Shania
+Twombley.
 
 Telegram lacks one layer of structural features added on top. Here's mine.
 
@@ -107,6 +113,12 @@ Start a message with the "ji " and the bot will tell ya the rest.
 9. Sick of the bot? Kill your copy of Q that's running jiyi, or say in the room
 "ji fu". "fu" is forced-upgrade mode, which makes it quit and not restart
 automatically. (Did you think it meant something else?)
+
+## name
+
+`jiyi` is supposedly the Chinese word for memory. Not **the** word, but one of
+them, that's for sure. It may not even be Chinese. It's definitely quick to
+type `ji` though.
 
 ## license
 
