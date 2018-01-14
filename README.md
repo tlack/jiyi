@@ -9,7 +9,8 @@ fantasyrepo
 This software has two primary feats.
 
 1. I like telegram. I want to use it to organize my information between devices.
-My information comes in all forms you know. 
+My information comes in all forms you know. This bot should help me find info 
+by searching history and organizing my hash tags which are surprisingly useful.
 
 2. I sometimes make telegram bots for dumb ideas. When someone messages one,
 you better believe I want to know about it.. on Telegram! This bot can forward
