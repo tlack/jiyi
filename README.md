@@ -39,18 +39,113 @@ it's in there.
 
 You can ask it questions to recall this info later. Questions start with `ji
 ....`. You can just say `ji` and it will try to give you help in a crude and
-terse way. The message has to **start** with `ji` - it ignores anything with
-`ji` in the middle of the message. So you don't have to worry about ji
+terse way. 
+
+Note that the message has to **start** with `ji` - it ignores anything with
+`ji` in the middle of the message. So you don't have to worry about jiyi
 rejiggering your conversations.
 
 It doesn't do any creepy shit. You own all data, and this code - it's public
 domain.
 
+## ops
+
+The bot has a concept of operators. It understands messages from operators
+differently than other Telegram users. `ji op` for more.
+
+## help 
+
+talk about wishful thinking
+
+all commands should have a one letter abbreviation for quick use. minimize typin
+
+`ji` - help and world times for all users seen in operator room
+
+`ji ! shell cmd text` - scary
+
+`ji $ code textorurl` - set `$code` in future messages to text or results of
+http get url. global
+
+`ji @ tag` - in bouncer mode, when replying to the bot in the operator room,
+add a tag to the user who sent the message to the bot. In all future messages,
+this tag will be prepended to their message text.
+
+`ji # tag` - in bouncer mode, when replying to the bot in the operator room,
+add a tag to the last message. This can help you tag someone's complaints, or
+more likely ignore them.
+
+`ji c(oin) [sym [sym...]]`
+
+`ji f u/d/b/r path` - host system file upload (`ji f u /etc/passwd`), download,
+backup (create tgz of path), 
+
+`ji l(ast)` - summary of last commands bot saw and acted on or messages sent
+to it
+
+`ji hg url... (re (ua))` - url get spew
+
+`ji hh header` - set headers for next hg/hp. do the full string like X-Blah: Ugh..
+
+`ji hp url... urlencodeddata (re (ua))` - post
+
+`ji ho optiii` - nooooo
+
+`ji hw url... (re (ua))` - watch url. fetch every minute and report when changes.
+set referrer value and user agent. 
+
+`ji op +idorname` - add user to ji's internal table of operators who can send
+it commands. operator is a cool name but powers limited compared to:
+
+`ji op @idorname` - make user an administrator. can see other information and
+use shell `!` and execute `x`/`xj` (json) commands.
+
+`ji op [idorname]` - user activity log
+
+`ji op /idorname` - silence user, remove from any rooms, permanently sterilize,
+and remote to relevant authorities via Facebook
+
+`ji op -idorname` - ..remove
+
+`ji p(ub) toid msgtext` - publish to person/group chat as if `msgtext` was said
+by bot. `toid` may not be a wild card.
+
+`ji q(uery) taga,tagb` - all results for #taga and #tagb 
+
+`ji q(uery) taga&tagb` - found together? show together
+
+`ji q(uery) taga|tagb` - or?
+
+`ji r(eply) msgid msgtext` - reply to msgid (not person or chat id) with
+msgtext. This is different than the bot just saying it. When you reply to a
+bot's bounced message, you can just use `ji r msgtext`. `msgid` may not be a 
+wild card.
+
+`ji s(ub) fromid toid` - forward all messages from/to person/group. use wild
+card of `*` for all.
+
+`ji t(ags) [tags..]` - tag analysis
+
+`ji u(pdate)` - restart bot, useful when you make a change to code or config
+and are detached from console running jiyi
+
+`ji w(here/hen) words..` - quick search, summary with *
+
+`ji x qstmt..` - execute Q code and show result as pretty printed text
+
+`ji xj qstmt..` - same, but return json inside preformatted text block.
+
+`ji xh :localhost:5010 qstmt..` - do something in q, send it via ipc, return result. i swear this is useful.
+
+`ji xH ..` - same, but async. no result in room. at all.
+
 ## should
 
 understand editing messages
+
 give index of all used tags `ji t(ags..)`
+
 quick summary of other instances of word/name/tag `ji w(here) word,name,tag...`
+
 have some basic concept of files and not just TOTALLY FUCKING IGNORE THEM
 
 ## does
@@ -63,17 +158,39 @@ understand deleting messages
 
 ## maybe
 
+math help, calculator, world clock, calendar (short/long)..
+
+sentiment analysis
+
 cross indexes
+
 date ranges
+
 boolean search terms
+
 web interface
+
 csv export
+
+newsapi.org bridge
+
+twilio message bridge
+
+email bridge
+
+slack bridge (just kidding dude)
 
 ## wont
 
 utf8 in depth (should support utf8 in messages transparently)
+
 emoji
+
 mysql, python, node, php, js, ...
+
+## help
+
+`ji 
 
 ## now
 
@@ -96,13 +213,14 @@ useless, or functionless-automaton-mode.
 5. Rename `_CONF.EXAMPLE.q` to `_CONF.q`, edit it, and put in your API key in
 the labeled orifice.
 
-6. Run "/q/l32/q jiyi.q", or "c:\q\w32\q.exe jiyi.q", or whatever works for
-your OS, and it will check its own messages every five seconds.  You can kill
-it and restart at any time. You can edit the config file to tell it to check
-every second if you're really anal, or you could make it check every 60
-seconds, and let your computer take a nap. You are running the show. 
+6. From your terminal or shell run `/q/l32/q jiyi.q`, or `c:\q\w32\q.exe
+jiyi.q`, or whatever works for your OS, and it will check its own messages
+every five seconds.  You can kill it and restart at any time. You can edit the
+config file to tell it to check every second if you're really anal, or you
+could make it check every 60 seconds, and let your computer take a nap. You are
+running the show. 
 
-7. Message your bot. It will say hello back to you. The help message should get you going?
+7. Message your bot. It will say hello back to you. The help message should get you going.
 
 7a. If not, see if you see any obvious errors in the results of step #6. You
 probably put in the key wrong, or ran Q with the wrong path name. See steps #1
@@ -111,10 +229,10 @@ and #4-5
 7b. Still can't figure it out? You're fucked.
 
 8. Invite your bot to a room and it should pop in and say hello. Want help?
-Start a message with the "ji " and the bot will tell ya the rest.
+Start a message with the `ji` and the bot will tell ya the rest. 
 
 9. Sick of the bot? Kill your copy of Q that's running jiyi, or say in the room
-"ji fu". "fu" is forced-upgrade mode, which makes it quit and not restart
+`ji fu`. `fu` is forced-upgrade mode, which makes it quit and not restart
 automatically. (Did you think it meant something else?)
 
 ## name
