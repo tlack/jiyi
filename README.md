@@ -4,6 +4,11 @@
 
 fantasyrepo
 
+## short
+
+Telegram lacks one layer of structural features added on top. Here's mine.
+Doesn't work.
+
 ## whyy
 
 This software has three primary feats:
@@ -23,8 +28,6 @@ me or in any way endanger my very super secret sticker sharing activites. It
 should not require me to buy a $299 per year discounted plan. I do not wish to
 receive a daily marketing BuzzMail with social commentary about Shania
 Twombley.
-
-Telegram lacks one layer of structural features added on top. Here's mine.
 
 ## how
 
