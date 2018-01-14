@@ -6,8 +6,16 @@ fantasyrepo
 
 ## whyy
 
-I like telegram. I want to use it to organize my information between devices.
+This software has two primary feats.
+
+1. I like telegram. I want to use it to organize my information between devices.
 My information comes in all forms you know. 
+
+2. I sometimes make telegram bots for dumb ideas. When someone messages one,
+you better believe I want to know about it.. on Telegram! This bot can forward
+messages from one room, or one person-to-bot (p2b?) convo, into another one.
+You can then reply to that person or room through the bot. Helps you smooth out
+some UI rough spots and not be caught with your pants on.
 
 Telegram lacks one layer of structural features added on top. Here's mine.
 
