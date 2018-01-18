@@ -93,6 +93,14 @@ to it
 `ji hw url... (re (ua))` - watch url. fetch every minute and report when changes.
 set referrer value and user agent. 
 
+`ji n(et)` - network stats
+
+`ji n(et)n(odes)` - network nodes, show shortcut names, times; connect to each and check health, disk space..
+
+`ji nxh node qstmt` - eval qstmt, send to node sync. node can be an alias, group, wildcard, var ref? dunno..
+
+`ji nhx node qstmt` - eval qstmt ON node, same
+
 `ji op +idorname` - add user to ji's internal table of operators who can send
 it commands. operator is a cool name but powers limited compared to:
 
